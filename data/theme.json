@@ -1,0 +1,244 @@
+[
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/sector-publico",
+    "notation": "sector-publico",
+    "prefLabel": [
+        "Public sector",
+        "Sector p\u00fablic",
+        "Sector p\u00fablico",
+        "Sector p\u00fablico",
+        "Sektore publikoa"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/educacion",
+    "notation": "educacion",
+    "prefLabel": [
+        "Educaci\u00f3",
+        "Educaci\u00f3n",
+        "Educaci\u00f3n",
+        "Education",
+        "Hezkuntza"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/cultura-ocio",
+    "notation": "cultura-ocio",
+    "prefLabel": [
+        "Cultura e lecer",
+        "Cultura i lleure",
+        "Cultura y ocio",
+        "Culture and leisure",
+        "Kultura eta aisia"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/turismo",
+    "notation": "turismo",
+    "prefLabel": [
+        "Tourism",
+        "Turisme",
+        "Turismo",
+        "Turismo",
+        "Turismoa"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/salud",
+    "notation": "salud",
+    "prefLabel": [
+        "Healthcare",
+        "Osasuna",
+        "Salud",
+        "Salut",
+        "Sa\u00fade"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/sociedad-bienestar",
+    "notation": "sociedad-bienestar",
+    "prefLabel": [
+        "Gizartea eta ongizatea",
+        "Sociedad y bienestar",
+        "Sociedade e benestar",
+        "Societat i benestar",
+        "Society and welfare"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/demografia",
+    "notation": "demografia",
+    "prefLabel": [
+        "Demografia",
+        "Demografia",
+        "Demograf\u00eda",
+        "Demograf\u00eda",
+        "Demography"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/medio-ambiente",
+    "notation": "medio-ambiente",
+    "prefLabel": [
+        "Environment",
+        "Ingurumena",
+        "Medi ambient",
+        "Medio ambiente",
+        "Medio ambiente"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/economia",
+    "notation": "economia",
+    "prefLabel": [
+        "Economia",
+        "Economy",
+        "Econom\u00eda",
+        "Econom\u00eda",
+        "Ekonomia"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/hacienda",
+    "notation": "hacienda",
+    "prefLabel": [
+        "Facenda",
+        "Hacienda",
+        "Hisenda",
+        "Ogasuna",
+        "Treasury"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/empleo",
+    "notation": "empleo",
+    "prefLabel": [
+        "Empleo",
+        "Employment",
+        "Emprego",
+        "Enplegua",
+        "Ocupaci\u00f3"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/urbanismo-infraestructuras",
+    "notation": "urbanismo-infraestructuras",
+    "prefLabel": [
+        "Hirigintza eta azpiegiturak",
+        "Town planning and infrastructures",
+        "Urbanisme i infraestructures",
+        "Urbanismo e infraestructuras",
+        "Urbanismo e infraestruturas"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/transporte",
+    "notation": "transporte",
+    "prefLabel": [
+        "Garraioa",
+        "Transport",
+        "Transport",
+        "Transporte",
+        "Transporte"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/legislacion-justicia",
+    "notation": "legislacion-justicia",
+    "prefLabel": [
+        "Legegintza eta justizia",
+        "Legislaci\u00f3 i just\u00edcia",
+        "Legislaci\u00f3n y justicia",
+        "Legislation and justice",
+        "Lexislaci\u00f3n e xustiza"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/comercio",
+    "notation": "comercio",
+    "prefLabel": [
+        "Comercio",
+        "Comercio",
+        "Comer\u00e7",
+        "Commerce",
+        "Merkataritza"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/vivienda",
+    "notation": "vivienda",
+    "prefLabel": [
+        "Etxebizitza",
+        "Habitatge",
+        "Housing",
+        "Vivenda",
+        "Vivienda"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/industria",
+    "notation": "industria",
+    "prefLabel": [
+        "Industria",
+        "Industria",
+        "Industria",
+        "Industry",
+        "Ind\u00fastria"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/energia",
+    "notation": "energia",
+    "prefLabel": [
+        "Energia",
+        "Energia",
+        "Energy",
+        "Energ\u00eda",
+        "Enerx\u00eda"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/deporte",
+    "notation": "deporte",
+    "prefLabel": [
+        "Deporte",
+        "Deporte",
+        "Esport",
+        "Kirola",
+        "Sport"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/medio-rural-pesca",
+    "notation": "medio-rural-pesca",
+    "prefLabel": [
+        "Medi rural",
+        "Medio Rural",
+        "Medio rural",
+        "Nekazaritza",
+        "Rural environment"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/seguridad",
+    "notation": "seguridad",
+    "prefLabel": [
+        "Security",
+        "Seguretat",
+        "Seguridad",
+        "Seguridade",
+        "Segurtasuna"
+    ]
+},
+{
+    "_about": "http://datos.gob.es/kos/sector-publico/sector/ciencia-tecnologia",
+    "notation": "ciencia-tecnologia",
+    "prefLabel": [
+        "Ciencia e tecnolox\u00eda",
+        "Ciencia y tecnolog\u00eda",
+        "Ci\u00e8ncia i tecnologia",
+        "Science and technology",
+        "Zientzia eta teknologia"
+    ]
+}
+]
