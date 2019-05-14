@@ -6,6 +6,7 @@ import os
 import requests
 import urllib3
 from bunch import Bunch
+from charts import save_pie
 
 urllib3.disable_warnings()
 requests.packages.urllib3.disable_warnings()
@@ -52,23 +53,51 @@ def read_data(name):
         json.dump(data, f, indent=4)
     return data
 
+def mkBunch(data):
+    if isinstance(data, str):
+        data = read_data(data)
+    r = {}
+    keys={}
+    for i in data:
+        for k, val in i.items():
+            tps = keys.get(k, set())
+            tps.add(type(val))
+            keys[k]=tps
+    list_keys=set()
+    l_type = type([])
+    for k, tps in keys.items():
+        if len(tps)>1 and l_type in tps:
+            list_keys.add(k)
+    for i in data:
+        for k in list_keys:
+            v = i.get(k, None)
+            if v is None:
+                i[k]=[]
+            elif not isinstance(v, list):
+                i[k]=[v]
+        i = Bunch(**i)
+        i._count=0
+        i.id = i._about.split("/")[-1]
+        r[i._about]=i
+    return r
 
 data = Bunch(**{
-    s: read_data(s) for s in ("dataset", "distribution", "publisher", "spatial", "theme")
+    s: mkBunch(s) for s in ("dataset", "distribution", "publisher", "spatial", "theme")
 })
 for i, v in data.items():
     print("%6s %s" % (len(v), i))
 
+
+
 types = set()
-for dataset in data.dataset:
-    distribution = dataset.get("distribution", None)
-    if distribution:
-        print(dataset["title"])
-        if isinstance(distribution, dict):
-            distribution = [distribution]
-        for dis in distribution:
-            byteSize = dis.get("byteSize", None)
-            if byteSize is None:
-                dis["byteSize"] = get_size(dis["accessURL"])
-            if byteSize:
-                print(dis["format"]["value"], byteSize)
+for dataset in data.dataset.values():
+    publisher = data.publisher[dataset.publisher]
+    publisher._count = publisher._count + 1
+    for spatial in dataset.spatial:
+        spatial = data.spatial[spatial]
+        spatial._count = spatial._count + 1
+
+total = len(data.dataset.values())
+save_pie("fig/total.png", "Datos por publicador", data.publisher, key=("agricultura", "yellowgreen"), minimo=92)
+items = [d for d in data.publisher.values() if d["notation"][0]=="E"]
+save_pie("fig/estatal.png", "Datos por publicador (estado)", items, key=("agricultura", "yellowgreen"), total=10)
