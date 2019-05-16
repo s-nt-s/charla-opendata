@@ -1,208 +1,208 @@
 {
     "application/pdf": [
-        ".zip",
-        ".asp",
+        ".aspx",
         ".php",
-        ".jsp",
-        ".html",
         ".action",
         ".pdf",
-        ".shtml",
-        ".aspx",
+        ".asp",
+        ".html",
+        ".zip",
         ".xls",
-        ".do",
-        ".htm",
+        ".jsp",
         ".pdf <-----------",
-        ".PDF"
+        ".htm",
+        ".PDF",
+        ".do",
+        ".shtml"
     ],
     "application/xhtml+xml": [
-        ".cmd",
-        ".asp",
+        ".aspx",
         ".php",
+        ".asp",
+        ".html",
+        ".xhtml <-----------",
         ".jsp",
         ".wms",
-        ".html",
-        ".shtml",
-        ".do",
         ".htm",
-        ".xhtml <-----------",
-        ".aspx"
+        ".do",
+        ".cmd",
+        ".shtml"
     ],
     "text/html": [
-        ".htm <-----------",
-        ".cmd",
         ".gif",
+        ".vm",
+        ".zip",
+        ".json",
+        ".txt",
+        ".htm",
+        ".cmd",
+        ".rar",
+        ".dll",
+        ".aspx",
+        ".api",
+        ".htm <-----------",
+        ".do",
+        ".shtml",
         ".php",
         ".pdf",
-        ".rar",
-        ".do",
-        ".zip",
-        "._Zaragoza",
-        ".phtml",
-        ".dll",
-        ".action",
-        ".jpg",
-        ".txt",
-        ".xml",
-        ".shtml",
-        ".json",
-        ".api",
-        ".aspx",
-        ".asp",
-        ".cgi",
-        ".jsp",
         ".html",
-        ".vm",
-        ".faces",
-        ".htm"
+        ".xml",
+        "._Zaragoza",
+        ".cgi",
+        ".jpg",
+        ".action",
+        ".asp",
+        ".phtml",
+        ".jsp",
+        ".faces"
     ],
     "application/json": [
-        ".json <-----------",
-        ".geojson",
-        ".zip",
         ".php",
+        ".px",
         ".xml",
-        ".csv",
-        ".jsp",
+        ".zip",
         ".jsonld",
         ".json",
-        ".px"
+        ".csv",
+        ".jsp",
+        ".json <-----------",
+        ".geojson"
     ],
     "text/csv": [
         ".gif",
-        ".php",
-        ".ashx",
-        ".CSV",
-        ".pdf",
-        ".do",
         ".zip",
-        ".csv <-----------",
-        ".cvs",
-        ".dll",
-        ".csv_c",
-        ".xls",
         ".txt",
-        ".gml32",
-        ".xlsx",
+        ".htm",
+        ".dll",
         ".aspx",
+        ".CSV",
+        ".csv_sc",
+        ".xls",
+        ".do",
+        ".xlsx",
+        ".gml31",
+        ".gml32",
+        ".php",
+        ".pdf",
+        ".7z",
         ".asp",
+        ".csv_c",
         ".csv",
         ".jsp",
-        ".7z",
+        ".cvs",
+        ".csv <-----------",
         ".faces",
-        ".csv_sc",
-        ".htm",
-        ".gml31"
+        ".ashx"
     ],
     "application/rdf+xml": [
-        ".zip",
         ".rdf",
-        ".csv",
-        ".rdf <-----------",
         ".ttl",
+        ".xls",
+        ".zip",
+        ".rdf <-----------",
         ".json",
-        ".rdf-xml",
-        ".xls"
+        ".csv",
+        ".rdf-xml"
     ],
     "text/xml": [
-        ".zip",
-        ".xml <-----------",
-        ".asp",
-        ".xlm",
-        ".xml",
-        ".gz",
-        ".wms",
+        ".aspx",
         ".rss",
-        ".rar",
+        ".asp",
+        ".gz",
+        ".xml",
+        ".zip",
+        ".xlm",
+        ".xml <-----------",
+        ".wms",
         ".do",
-        ".aspx"
+        ".rar"
     ],
     "text/wms": [
-        ".dll",
+        ".aspx",
         ".search",
-        ".aspx"
+        ".dll"
     ],
     "application/rss+xml": [
-        ".1",
-        ".2",
-        ".asp",
+        ".aspx",
         ".php",
+        ".rss",
+        ".action",
+        ".asp",
+        ".2",
         ".xml",
+        ".rssGaleria",
         ".jsp",
         ".geo",
-        ".action",
-        ".rss",
-        ".rssGaleria",
         ".do",
-        ".aspx",
-        ".georss"
+        ".georss",
+        ".1"
     ],
     "application/gml+xml": [
-        ".zip",
-        ".gml",
+        ".php",
         ".7z",
-        ".php"
+        ".gml",
+        ".zip"
     ],
     "application/octet-stream": [
-        ".zip",
-        ".php",
         ".ics",
-        ".csv",
+        ".php",
+        ".xls",
         ".xml",
-        ".a <-----------",
-        ".bin",
-        ".7z",
-        ".dat",
-        ".odt",
+        ".zip",
+        ".csv",
         ".kml",
+        ".7z",
+        ".bin",
+        ".htm",
+        ".a <-----------",
+        ".dat",
         ".",
         ".rar",
-        ".xls",
-        ".htm"
+        ".odt"
     ],
     "application/vnd.google-earth.kmz": [
-        ".zip",
+        ".aspx",
         ".php",
-        ".html",
         ".kmz",
         ".kmz <-----------",
-        ".aspx"
+        ".html",
+        ".zip"
     ],
     "text/wfs": [
         ".wfs"
     ],
     "application/vnd.google-earth.kml+xml": [
-        ".zip",
         ".php",
+        ".kmz",
+        ".zip",
         ".jsp",
         ".kml",
-        ".kmz",
         ".do",
         ".kml <-----------"
     ],
     "application/zip": [
-        ".zip",
+        ".aspx",
         ".php",
+        ".zip",
+        ".zip <-----------",
         ".7z",
         ".outros",
-        ".shtml",
-        ".rar",
-        ".do",
-        ".zip <-----------",
         ".htm",
-        ".aspx"
+        ".do",
+        ".rar",
+        ".shtml"
     ],
     "application/atom+xml": [
         ".aspx",
-        ".xml",
         ".atom <-----------",
+        ".xml",
         ".atom"
     ],
     "text/turtle": [
-        ".ttl <-----------",
-        ".turtle",
+        ".bz2",
         ".ttl",
-        ".bz2"
+        ".ttl <-----------",
+        ".turtle"
     ],
     "application/ld+json": [
         ".jsonld"
@@ -211,139 +211,139 @@
         ".n3"
     ],
     "application/xml": [
-        ".zip",
-        ".asp",
-        ".php",
-        ".xml",
-        ".jsp",
-        ".asmx",
-        ".html",
-        ".rdf <-----------",
-        ".action",
-        ".json",
         ".aspx",
-        ".do",
+        ".php",
+        ".action",
         ".ws",
-        ".txt"
+        ".asp",
+        ".html",
+        ".xml",
+        ".asmx",
+        ".rdf <-----------",
+        ".json",
+        ".zip",
+        ".jsp",
+        ".txt",
+        ".do"
     ],
     "image/png": [
-        ".png <-----------",
         ".png",
+        ".png <-----------",
         ".jsp"
     ],
     "image/jpeg": [
+        ".aspx",
         ".php",
-        ".do",
-        ".jpg",
-        ".htm",
         ".jpe <-----------",
-        ".aspx"
+        ".htm",
+        ".jpg",
+        ".do"
     ],
     "text/plain": [
-        ".zip",
         ".php",
         ".pb",
+        ".zip",
         ".bat <-----------",
-        ".faces",
+        ".txt",
         ".texto-plano",
-        ".rar",
-        ".txt"
+        ".faces",
+        ".rar"
     ],
     "application/vnd.oasis.opendocument.spreadsheet": [
-        ".ods <-----------",
-        ".zip",
         ".php",
+        ".zip",
         ".jsp",
         ".do",
-        ".ods"
+        ".ods",
+        ".ods <-----------"
     ],
     "application/vnd.ms-excel": [
-        ".zip",
-        ".ods",
-        ".asp",
+        ".aspx",
         ".php",
-        ".XLS",
-        ".html",
-        ".detalleDepartamento",
-        ".dll",
         ".action",
-        ".xlb <-----------",
-        ".shtml",
-        ".faces",
         ".rar",
+        ".asp",
+        ".html",
         ".xls",
-        ".do",
+        ".zip",
+        ".XLS",
+        ".dll",
         ".htm",
-        ".xlsx",
+        ".do",
         ".excel",
-        ".aspx"
+        ".xlsx",
+        ".ods",
+        ".faces",
+        ".detalleDepartamento",
+        ".xlb <-----------",
+        ".shtml"
     ],
     "application/marc": [
-        ".zip",
         ".mrc",
         ".rar",
-        ".xml"
+        ".xml",
+        ".zip"
     ],
     "application/x-zipped-shp": [
-        ".zip",
+        ".aspx",
         ".php",
-        ".7z",
-        ".html",
-        ".rar",
-        ".do",
-        ".htm",
         ".shp",
-        ".aspx"
+        ".html",
+        ".zip",
+        ".7z",
+        ".htm",
+        ".do",
+        ".rar"
     ],
     "application/api": [
-        ".zip",
-        ".asp",
         ".rdf",
-        ".cgi",
-        ".csv",
-        ".xml",
+        ".aspx",
+        ".asp",
         ".html",
+        ".zip",
+        ".xml",
+        ".csv",
+        ".cgi",
         ".mrc",
-        ".do",
-        ".aspx"
+        ".do"
     ],
     "image/tiff": [
-        ".zip",
-        ".tif",
-        ".do",
+        ".aspx",
         ".tif <-----------",
-        ".aspx"
+        ".tif",
+        ".zip",
+        ".do"
     ],
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": [
-        ".zip",
-        ".rdf",
+        ".aspx",
         ".php",
-        ".csv",
-        ".html",
-        ".ashx",
+        ".rdf",
         ".pdf",
-        ".shtml",
+        ".ashx",
         ".xls",
-        ".ods",
-        ".xlsx <-----------",
+        ".zip",
+        ".html",
+        ".csv",
+        ".shtml",
         ".xlsx",
-        ".aspx"
+        ".ods",
+        ".xlsx <-----------"
     ],
     "text/pc-axis": [
-        ".do",
         ".asp",
-        ".px"
+        ".px",
+        ".do"
     ],
     "application/ecw": [
-        ".do",
-        ".ecw"
+        ".ecw",
+        ".do"
     ],
     "text/ascii": [
-        ".jsp",
-        ".html",
         ".aspx",
-        ".do",
-        ".txt"
+        ".html",
+        ".jsp",
+        ".txt",
+        ".do"
     ],
     "application/sparql-query": [
         ".htm"
@@ -366,24 +366,24 @@
         ".docx"
     ],
     "application/vnd.oasis.opendocument.text": [
-        ".do",
+        ".odt",
         ".odt <-----------",
-        ".odt"
+        ".do"
     ],
     "application/msword": [
-        ".do",
+        ".doc",
         ".doc <-----------",
-        ".doc"
+        ".do"
     ],
     "text/rtf": [
         ".rtf"
     ],
     "text/calendar": [
-        ".calendario",
         ".ics",
         ".ical",
+        ".ics <-----------",
         ".shtml",
-        ".ics <-----------"
+        ".calendario"
     ],
     "application/dxf": [
         ".php",
@@ -396,26 +396,26 @@
         ".zip"
     ],
     "image/vnd.dgn": [
+        ".dgn",
         ".do",
-        ".jsp",
-        ".dgn"
+        ".jsp"
     ],
     "image/vnd.dwg": [
         ".htm",
-        ".jsp",
-        ".dwg"
+        ".dwg",
+        ".jsp"
     ],
     "application/xbrl": [
-        ".xbrl",
-        ".aspx"
+        ".aspx",
+        ".xbrl"
     ],
     "application/msaccess": [
-        ".zip",
+        ".aspx",
         ".mdb",
+        ".zip",
         ".mdb <-----------",
-        ".rar",
         ".do",
-        ".aspx"
+        ".rar"
     ],
     "application/epub+zip": [
         ".epub"
@@ -424,8 +424,8 @@
         ".asp"
     ],
     "text/tab-separated-values": [
-        ".tsv",
-        ".tsv <-----------"
+        ".tsv <-----------",
+        ".tsv"
     ],
     "application/solr": [
         ".htm"
@@ -443,8 +443,8 @@
         ".do"
     ],
     "image/vnd.djvu": [
-        ".htm",
-        ".djvu <-----------"
+        ".djvu <-----------",
+        ".htm"
     ],
     "x-lml/x-gdb": [
         ".do"

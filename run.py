@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from data import mkData
-from fig import save_pie
+from data import mkData, get_egif
+from fig import save_pie, save_quality
 from bunch import Bunch
 import mimetypes
 
@@ -9,6 +9,8 @@ from urllib.parse import urlparse
 import os
 import json
 
+egif = get_egif()
+save_quality("fig/egif.png", "% de calidad", egif)
 
 data = mkData()
 
@@ -62,6 +64,6 @@ items = [d for d in data.publisher.values() if d["notation"][0]=="E"]
 save_pie("fig/publisher_E.png", "Datos por publicador (estado)", items, key=("agricultura", "yellowgreen"), total=10)
 
 save_pie("fig/spatial.png", "Ámbito geográfico", data.spatial, key=("españa", "yellowgreen"), total=15)
-save_pie("fig/theme.png", "Temas", data.theme)#, key=("españa", "yellowgreen"), total=15)
+save_pie("fig/theme.png", "Temas", data.theme)
 
-save_pie("fig/format.png", "Formatos", formats, total=30)#, key=("españa", "yellowgreen"), total=15)
+save_pie("fig/format.png", "Formatos", formats, total=30)

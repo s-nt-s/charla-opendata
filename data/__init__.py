@@ -4,6 +4,7 @@ import os
 import requests
 import urllib3
 from bunch import Bunch
+import dateutil.parser
 
 urllib3.disable_warnings()
 requests.packages.urllib3.disable_warnings()
@@ -93,3 +94,17 @@ def mkData():
         s: mkBunch(s) for s in ("dataset", "distribution", "publisher", "spatial", "theme")
     })
     return data
+
+def get_egif():
+    with open(dr+"/egif.json", "r") as f:
+        js = json.load(f)
+    js = list(sorted(js, key= lambda x: x["fecha"]))
+    l = len(js) -1
+    for i, o in reversed(list(enumerate(js))):
+        o = Bunch(**o)
+        if i<l:
+            o.total = o.total + js[i+1].total
+            o.ok = o.ok + js[i+1].ok
+        o.fecha = dateutil.parser.parse(o.fecha)
+        js[i] = o
+    return js

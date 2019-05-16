@@ -2,6 +2,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 import re
+import datetime
 
 re_min =  re.compile(r"^[0123]\.")
 
@@ -128,4 +129,20 @@ def save_pie(file, title, *agrv, **kargv):
     # plt.axis('equal')
     #plt.tight_layout()
     plt.savefig(file, bbox_extra_artists=(lgd,), bbox_inches='tight')
+    plt.clf()
+
+
+def save_quality(file, title, data):
+    dates = []
+    values = []
+    for o in data:
+        dates.append(o.fecha)
+        values.append(o.ok*100/o.total)
+
+    plt.plot(dates,values)
+    plt.title(title)
+    #plt.ylabel("%")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(file)
     plt.clf()
