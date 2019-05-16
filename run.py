@@ -41,7 +41,7 @@ for distribution in data.distribution.values():
     if ext:
         ts.add(ext)
     t_format[frmt]=list(ts)
-    print(mimetypes.guess_type(distribution.accessURL))
+    #print(mimetypes.guess_type(distribution.accessURL))
 
     f1, f2 = frmt.split("/", 1)
     if f1 in ("text", "application", "image"):
@@ -56,6 +56,7 @@ with open("data/format.json", "w") as f:
 formats=[Bunch(label=k, _count=v) for k, v in formats.items()]
 
 total = len(data.dataset.values())
+print(total)
 save_pie("fig/publisher.png", "Datos por publicador", data.publisher, key=("agricultura", "yellowgreen"), minimo=92)
 items = [d for d in data.publisher.values() if d["notation"][0]=="E"]
 save_pie("fig/publisher_E.png", "Datos por publicador (estado)", items, key=("agricultura", "yellowgreen"), total=10)
