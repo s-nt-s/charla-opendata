@@ -5,11 +5,15 @@ import requests
 import urllib3
 from bunch import Bunch
 import dateutil.parser
+import bs4
+import PyPDF2
+import io
+import re
 
 urllib3.disable_warnings()
 requests.packages.urllib3.disable_warnings()
 
-
+re_url=re.compile(r"\bhttps?\s*://\s*\S+")
 me = os.path.realpath(__file__)
 dr = os.path.dirname(me)
 
@@ -49,15 +53,18 @@ def get_data(name):
             return items
 
 
-def read_data(name):
+def read_data(name, _get_data=None, reload=False):
     file = dr+"/%s.json" % name
-    if os.path.isfile(file):
+    if os.path.isfile(file) and not reload:
         with open(file, "r") as f:
             js = f.read()
-            for old, new in dups_organismos:
-                js.replace(old, new)
+            if _get_data is None:
+                for old, new in dups_organismos:
+                    js.replace(old, new)
             return json.loads(js)
-    data = get_data(name)
+    if _get_data is None:
+        _get_data = get_data
+    data = _get_data(name)
     with open(file, "w") as f:
         json.dump(data, f, indent=4)
     return data
@@ -108,3 +115,79 @@ def get_egif():
         o.fecha = dateutil.parser.parse(o.fecha)
         js[i] = o
     return js
+
+def get_pdf(url):
+    r = requests.get(url, verify=False)
+    with io.BytesIO(r.content) as pdf:
+        read_pdf = PyPDF2.PdfFileReader(pdf)
+        page = read_pdf.getPage(0)
+        txt = page.extractText()
+        urls=[]
+        return txt, urls
+
+        annotationList = []
+        if read_pdf.annots:
+            for annotation in page.annots.resolve():
+                annotationDict = annotation.resolve()
+                if str(annotationDict["Subtype"]) != "/Link":
+                    # Skip over any annotations that are not links
+                    continue
+                position = annotationDict["Rect"]
+                uriDict = annotationDict["A"].resolve()
+                # This has always been true so far.
+                assert str(uriDict["S"]) == "/URI"
+                # Some of my URI's have spaces.
+                uri = uriDict["URI"].replace(" ", "%20")
+                annotationList.append((position, uri))
+        print(annotationList)
+        return txt, annotationList
+
+def _get_examples(*args, **kargv):
+    results=[]
+    url = "https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=Spain&field_region_value=All&field_sector_value=All&field_type_of_use_case_value=reuse&page="
+    url = "https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=All&field_type_of_use_case_value=All&page="
+    page = -1
+    while True:
+        page = page + 1
+        r = requests.get(url+str(page), verify=False)
+        soup = bs4.BeautifulSoup(r.content, "lxml")
+        expls = soup.select("div.view-content div.views-row")
+        if len(expls)==0:
+            return results
+        for ex in expls:
+            data = {}
+            a = ex.find("a")
+            data["pdf"] = a.attrs["href"]
+            title = a.get_text().strip()
+            if title == "Romanian Railways":
+                country, title= "Romania", "Railways"
+            elif title == "Malta":
+                country, title= "Malta", "Website"
+            else:
+                country, title = re.split(r"[\-–]", title, 1)
+            data["title"]=title.strip()
+            data["country"]=country.strip()
+            sp = ex.select("span.date-display-single")[0]
+            data["date"]=sp.attrs["content"][:10]
+            data["img"]=ex.find("img").attrs["src"]
+            for i in ex.select("div.views-field"):
+                txt = i.get_text().strip()
+                if ":" in txt:
+                    f, v = txt.split(":",1)
+                    f = f.strip().lower()
+                    v = v.strip()
+                    data[f]=v
+            '''
+            txt, urls = get_pdf(data["pdf"])
+            m = re_url.search(txt)
+            if m:
+                data["url"]=m.group()
+            '''
+            results.append(data)
+
+def get_examples():
+    return read_data("examples", _get_data=_get_examples)
+
+if __name__ == "__main__":
+    l = len(get_examples())
+    print(l)

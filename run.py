@@ -1,24 +1,22 @@
 #!/usr/bin/env python3
 
-from data import mkData, get_egif
-from fig import save_pie, save_quality
+from data import mkData, get_egif, get_examples
+from fig import save_pie, save_quality, save_pie2
 from bunch import Bunch
-import mimetypes
+from util import get_formats, get_format
 
-from urllib.parse import urlparse
+
 import os
 import json
 
-egif = get_egif()
-save_quality("fig/egif.png", "% de calidad", egif)
+#egif = get_egif()
+#save_quality("fig/egif.png", "% de calidad", egif)
 
 data = mkData()
 
-
-def get_ext(url):
-    path = urlparse(url).path
-    ext = os.path.splitext(path)[1]
-    return ext.split("&")[0]
+examples=get_examples()
+print(len(examples))
+save_pie2("fig/examples.png", "Aplicaciones por sector", examples)
 
 #print (data.publisher["http://datos.gob.es/recurso/sector-publico/org/Organismo/E04990301"])
 
@@ -34,22 +32,13 @@ for dataset in data.dataset.values():
 t_format={}
 formats={}
 for distribution in data.distribution.values():
-    frmt = distribution.format["value"]
-    ts = set(t_format.get(frmt, []))
-    ext = mimetypes.guess_extension(frmt)
-    if ext:
-        ts.add(ext+" <-----------")
-    ext = get_ext(distribution.accessURL)
-    if ext:
-        ts.add(ext)
-    t_format[frmt]=list(ts)
-    #print(mimetypes.guess_type(distribution.accessURL))
-
-    f1, f2 = frmt.split("/", 1)
-    if f1 in ("text", "application", "image"):
-        frmt = f2
-    if frmt.endswith(".kmz"):
-        frmt = "kmz"
+    mimetype, url = distribution.format["value"], distribution.accessURL
+    frmt = get_format(mimetype, url)
+    if frmt is None:
+        ts = set(t_format.get(mimetype, []))
+        ts = get_formats(mimetype, url, ts)
+        t_format[mimetype]=list(ts)
+        frmt = mimetype
     formats[frmt] = formats.get(frmt, 0) + 1
 
 with open("data/format.json", "w") as f:

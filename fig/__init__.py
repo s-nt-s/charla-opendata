@@ -146,3 +146,126 @@ def save_quality(file, title, data):
     plt.tight_layout()
     plt.savefig(file)
     plt.clf()
+
+
+def bar_compare(file, title, labels, ori, res, legend=None):
+    if legend is None:
+        legend = ('Original', 'HTML')
+    ind = np.arange(len(labels))
+    width = 0.35
+
+    plt.rcdefaults()
+    fig, ax = plt.subplots()
+    rects1 = ax.barh(ind, ori, width, color='b')
+    rects2 = ax.barh(ind + width, res, width, color='r')
+
+    ax.set_title(title)
+    ax.set_yticks(ind + width / 2)
+    ax.set_yticklabels(labels)
+    plt.xlabel("% sobre el total")
+
+    ax.legend((rects1[0], rects2[0]), legend)
+
+    plt.tight_layout()
+    plt.savefig(file)
+    plt.clf()
+
+def save_pie2(file, title, data):
+    sectors={}
+    total_eu = 0
+    total_es = 0
+    for d in data:
+        if not d.get("sector", None):
+            continue
+        sector = get_es(d["sector"])
+        total, spa = sectors.get(sector, (0, 0))
+        total = total + 1
+        total_eu = total_eu + 1
+        if d["country"]=="Spain":
+            spa = spa + 1
+            total_es = total_es + 1
+        sectors[sector]=(total, spa)
+
+    vals_eu = []
+    vals_es = []
+    labels = []
+    otros = 0
+    otros_es = 0
+    for sector, ts in sorted(sectors.items(), key=lambda x: (-x[1][0], -x[1][1], x[0])):
+        total, spa = ts
+        if total<4 or False:
+            otros = otros + 1
+            otros_es = otros_es + 1
+            continue
+        labels.append(sector)
+        vals_eu.append(total*100/total_eu)
+        vals_es.append(spa*100/total_es)
+        print(total, spa, sector)
+
+    if otros and False:
+        labels.append("Otros")
+        vals.append((otros, otros_es))
+        vals_eu.append(otros)
+        vals_es.append(otros_es)
+        print(otros, otros_es)
+
+    bar_compare(file, title, labels, vals_eu, vals_es, legend=("Europa", "España"))
+
+    return
+
+    fig, ax = plt.subplots()
+
+    size = 0.3
+    vals = np.array(vals)
+
+    cmap = plt.get_cmap("tab20c")
+    outer_colors = cmap(np.arange(3)*4)
+    inner_colors = cmap(np.array([1, 2, 5, 6, 9, 10]))
+
+    #patches, texts, autotexts =
+    patches, texts = ax.pie(vals.sum(axis=1), radius=1, colors=outer_colors,
+           wedgeprops=dict(width=size, edgecolor='w'),
+           startangle=90,
+           #autopct='%1.1f%%',
+           labels=labels)
+
+    ax.pie(vals.flatten(), radius=1-size, colors=inner_colors,
+           wedgeprops=dict(width=size, edgecolor='w'),
+           startangle=90,
+           #autopct='%1.1f%%'
+           )
+
+    ax.set(aspect="equal", title=title)
+
+    #lgd = ax.legend(patches, labels, bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+
+    plt.tight_layout()
+    plt.savefig(file, bbox_extra_artists=(texts,), bbox_inches='tight')#, bbox_extra_artists=(lgd,), bbox_inches='tight')
+    plt.clf()
+
+def get_es(s):
+    if s=="Government & Public Sector":
+        return "Gobierno y sector público"
+    if s=="Transport":
+        return "Transporte"
+    if s=="Science & Technology":
+        return "Ciencia y tecnología"
+    if s=="Economy & Finance":
+        return "Economia y finanzas"
+    if s=="Environment":
+        return "Médio ambiente"
+    if s=="Regions & Cities":
+        return "Regiones y ciudades"
+    if s=="Education, Culture & Sport":
+        return "Educación, cultura y deporte"
+    if s=="Health":
+        return "Salud"
+    if s=="Agriculture, Fisheries, Forestry & Foods":
+        return "Agricultura, pesca, bosques y alimentación"
+    if s=="Population & Society":
+        return "Población y sociedad"
+    if s=="Justice, Legal System & Public Safety":
+        return "Justicia, sistema legal y seguridad pública"
+    if s=="Energy":
+        return "Energía"
+    return s
