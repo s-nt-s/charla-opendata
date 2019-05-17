@@ -152,15 +152,16 @@ def bar_compare(file, title, labels, ori, res, legend=None):
     if legend is None:
         legend = ('Original', 'HTML')
     ind = np.arange(len(labels))
+
     width = 0.35
 
     plt.rcdefaults()
     fig, ax = plt.subplots()
-    rects1 = ax.barh(ind, ori, width, color='b')
-    rects2 = ax.barh(ind + width, res, width, color='r')
+    rects1 = ax.barh(ind - width / 2, ori, width, color='b')
+    rects2 = ax.barh(ind + width / 2, res, width, color='r')
 
     ax.set_title(title)
-    ax.set_yticks(ind + width / 2)
+    ax.set_yticks(ind)
     ax.set_yticklabels(labels)
     plt.xlabel("% sobre el total")
 
@@ -172,19 +173,18 @@ def bar_compare(file, title, labels, ori, res, legend=None):
 
 def save_pie2(file, title, data):
     sectors={}
-    total_eu = 0
-    total_es = 0
+    total_es = sum(1 if d["country"]=="Spain" else 0 for d in data)
+    total_eu = len(data)
     for d in data:
         if not d.get("sector", None):
             continue
-        sector = get_es(d["sector"])
-        total, spa = sectors.get(sector, (0, 0))
-        total = total + 1
-        total_eu = total_eu + 1
-        if d["country"]=="Spain":
-            spa = spa + 1
-            total_es = total_es + 1
-        sectors[sector]=(total, spa)
+        for sector in d["sector"]:
+            sector = get_es(sector)
+            total, spa = sectors.get(sector, (0, 0))
+            total = total + 1
+            if d["country"]=="Spain":
+                spa = spa + 1
+            sectors[sector]=(total, spa)
 
     vals_eu = []
     vals_es = []
@@ -193,7 +193,7 @@ def save_pie2(file, title, data):
     otros_es = 0
     for sector, ts in sorted(sectors.items(), key=lambda x: (-x[1][0], -x[1][1], x[0])):
         total, spa = ts
-        if total<4 or False:
+        if total<4 and False:
             otros = otros + 1
             otros_es = otros_es + 1
             continue
@@ -251,21 +251,33 @@ def get_es(s):
     if s=="Science & Technology":
         return "Ciencia y tecnología"
     if s=="Economy & Finance":
-        return "Economia y finanzas"
+        return "Economía y finanzas"
     if s=="Environment":
-        return "Médio ambiente"
+        return "Medio ambiente"
     if s=="Regions & Cities":
         return "Regiones y ciudades"
-    if s=="Education, Culture & Sport":
-        return "Educación, cultura y deporte"
+    if s=="Education":
+        return "Educación"
+    if s=="Culture & Sport":
+        return "Cultura y deporte"
     if s=="Health":
         return "Salud"
-    if s=="Agriculture, Fisheries, Forestry & Foods":
-        return "Agricultura, pesca, bosques y alimentación"
+    if s=="Agriculture":
+        return "Agricultura"
+    if s=="Fisheries":
+        return "Pesca"
+    if s=="Forestry & Foods":
+        return "Bosques y alimentación"
     if s=="Population & Society":
         return "Población y sociedad"
-    if s=="Justice, Legal System & Public Safety":
-        return "Justicia, sistema legal y seguridad pública"
+    if s=="Justice":
+        return "Justicia"
+    if s=="Legal System & Public Safety":
+        return "Sistema legal y seguridad pública"
     if s=="Energy":
         return "Energía"
+    if s=="Tourism":
+        return "Turismo"
+    if s=="International Issues":
+        return "Asuntos internacionales"
     return s

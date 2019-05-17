@@ -9,8 +9,8 @@ from util import get_formats, get_format
 import os
 import json
 
-#egif = get_egif()
-#save_quality("fig/egif.png", "% de calidad", egif)
+egif = get_egif()
+save_quality("fig/egif.png", "% de incendios con coordenadas", egif)
 
 data = mkData()
 

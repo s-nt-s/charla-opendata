@@ -167,6 +167,8 @@ def _get_examples(*args, **kargv):
                 country, title = re.split(r"[\-–]", title, 1)
             data["title"]=title.strip()
             data["country"]=country.strip()
+            if data["title"] == "Minotour":
+                data["sector"] = "Tourism"
             sp = ex.select("span.date-display-single")[0]
             data["date"]=sp.attrs["content"][:10]
             data["img"]=ex.find("img").attrs["src"]
@@ -176,7 +178,9 @@ def _get_examples(*args, **kargv):
                     f, v = txt.split(":",1)
                     f = f.strip().lower()
                     v = v.strip()
-                    data[f]=v
+                    if v:
+                        data[f]=v
+            data["sector"] = [s.strip() for s in data["sector"].split(",")]
             '''
             txt, urls = get_pdf(data["pdf"])
             m = re_url.search(txt)
@@ -185,9 +189,9 @@ def _get_examples(*args, **kargv):
             '''
             results.append(data)
 
-def get_examples():
-    return read_data("examples", _get_data=_get_examples)
+def get_examples(**kargv):
+    return read_data("examples", _get_data=_get_examples, **kargv)
 
 if __name__ == "__main__":
-    l = len(get_examples())
+    l = len(get_examples(reload=True))
     print(l)
