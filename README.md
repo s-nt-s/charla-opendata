@@ -245,7 +245,7 @@ lista el portal de datos abiertos de la Unión Europea agrupándolas por sector:
 <figure class="withCaption">
   <img src="fig/examples.png" alt="Aplicaciones por sector" title="Aplicaciones por sector">
   <figcaption><p>Aplicaciones por sector<br/>
-  <a href="https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=Agriculture%2C%20Fisheries%2C%20Forestry%20%26%20Foods&field_type_of_use_case_value=All">europeandataportal.eu</a></p></figcaption>
+  <a href="https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=All&field_type_of_use_case_value=All">europeandataportal.eu</a></p></figcaption>
 </figure>
 
 En ella vemos el peso de cada sector en el conjunto total, siendo el azul para
