@@ -31,8 +31,10 @@ Proyectos que crean riqueza. ¿Cuánta? Según la consultora McKinsey estamos ha
 
 <figure class="withCaption">
   <img src="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Open%20data%20Unlocking%20innovation%20and%20performance%20with%20liquid%20information/SVG_Open_data_Exhibit.ashx" alt="Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors" title="Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors">
-  <figcaption>Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors<br/>
-  <a href="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/open-data-unlocking-innovation-and-performance-with-liquid-information">mckinsey.com</a></figcaption>
+  <figcaption>
+  Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors<br/>
+  <a href="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/open-data-unlocking-innovation-and-performance-with-liquid-information">mckinsey.com</a>
+  </figcaption>
 </figure>
 
 Incluso podríamos decir que esta es una estimación a la baja ya que no incluye todos los tipos de datos abiertos, lo que nos lleva a:
@@ -213,7 +215,7 @@ Permite
 
 ## Global Forest Watch
 
-Global Forest Watch (GFW) es una plataforma que tiene como objetivo monitorizar los bosques de todo el planeta casi en tiempo real con el fin de protegerlos.
+[Global Forest Watch](https://www.globalforestwatch.org/) es una plataforma que tiene como objetivo monitorizar los bosques de todo el planeta casi en tiempo real con el fin de protegerlos.
 
 En concreto cubre:
 

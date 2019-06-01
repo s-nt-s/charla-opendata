@@ -1,4 +1,5 @@
 borrame.txt
+data/dataset.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
