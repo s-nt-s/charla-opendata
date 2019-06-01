@@ -31,11 +31,8 @@ Proyectos que crean riqueza. ¿Cuánta? Según la consultora McKinsey estamos ha
 
 <figure class="withCaption">
   <img src="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Open%20data%20Unlocking%20innovation%20and%20performance%20with%20liquid%20information/SVG_Open_data_Exhibit.ashx" alt="Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors" title="Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors">
-  <figcaption>
-  Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors<br/>
-  <a href="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/open-data-unlocking-innovation-and-performance-with-liquid-information">mckinsey.com</a>
-  </figcaption>
-
+  <figcaption><p>Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors<br/>
+  <a href="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/open-data-unlocking-innovation-and-performance-with-liquid-information">mckinsey.com</a></p></figcaption>
 </figure>
 
 Incluso podríamos decir que esta es una estimación a la baja ya que no incluye todos los tipos de datos abiertos, lo que nos lleva a:
@@ -58,8 +55,8 @@ Según el `Open Data Barometer` España ocupa el undécimo puesto en el ranking 
 
 <figure class="withCaption">
   <img src="fig/barometer1.png" alt="Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales" title="Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales">
-  <figcaption>Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales<br/>
-  <a href="https://opendatabarometer.org/4thedition/report/?lang=es">opendatabarometer.org/4thedition/</a></figcaption>
+  <figcaption><p>Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales<br/>
+  <a href="https://opendatabarometer.org/4thedition/report/?lang=es">opendatabarometer.org/4thedition/</a></p></figcaption>
 </figure>
 
 Este informe nos dice que tenemos un buen volumen de datos y vamos en buena dirección, pero también nos dice (a nosotros y la resto de países) que queda mucho por hacer.
@@ -68,8 +65,8 @@ No en vano solo el 7% de de los supuestos `datos abiertos` son realmente abierto
 
 <figure class="withCaption">
   <img src="fig/barometer2.png" alt="Detalle de España en Open Data Barometer" title="Detalle de España en Open Data Barometer">
-  <figcaption>Detalle de España en Open Data Barometer<br/>
-  <a href="https://opendatabarometer.org/4thedition/detail-country/?_year=2016&indicator=ODB&detail=ESP">opendatabarometer.org/4thedition/</a></figcaption>
+  <figcaption><p>Detalle de España en Open Data Barometer<br/>
+  <a href="https://opendatabarometer.org/4thedition/detail-country/?_year=2016&indicator=ODB&detail=ESP">opendatabarometer.org/4thedition/</a></p></figcaption>
 </figure>
 
 Como en la mayoría de países la asignatura pendiente son los datos referentes a la rendición de cuentas (presupuestos y gasto público) aunque hay una buena base para la innovación y la política social.
@@ -82,8 +79,8 @@ En este portal tenemos 22.353 dataset, los cuales están compuestos de uno o má
 
 <figure class="withCaption">
   <img src="fig/theme.png" alt="Dataset de datos.gob.es por temas" title="Dataset de datos.gob.es por temas">
-  <figcaption>Dataset de datos.gob.es por temas<br/>
-  <a href="https://datos.gob.es/apidata/catalog/theme.json?_pageSize=999">datos.gob.es</a></figcaption>
+  <figcaption><p>Dataset de datos.gob.es por temas<br/>
+  <a href="https://datos.gob.es/apidata/catalog/theme.json?_pageSize=999">datos.gob.es</a></p></figcaption>
 </figure>
 
 Si lo comparamos con la anterior grafica llama la atención que `Open Data Barometer` nos dice que los mejores datos están en Justicia pero en datos.gob.es no aparecen hasta el puesto 18º. Esto es por la diferencia de calidades entre distintos tipos de datos ya que `Open Data Barometer` no estará considerando como abiertos muchos
@@ -93,8 +90,8 @@ A menudo el problema es el formato:
 
 <figure class="withCaption">
   <img src="fig/format.png" alt="Dataset de datos.gob.es por formato" title="Dataset de datos.gob.es por formato">
-  <figcaption>Dataset de datos.gob.es por formato<br/>
-  <a href="https://datos.gob.es/apidata/catalog/distribution.json?_pageSize=999">datos.gob.es</a></figcaption>
+  <figcaption><p>Dataset de datos.gob.es por formato<br/>
+  <a href="https://datos.gob.es/apidata/catalog/distribution.json?_pageSize=999">datos.gob.es</a></p></figcaption>
 </figure>
 
 Baste ver que abundan los formatos privativos y que el según do más usado es `PDF`.
@@ -105,8 +102,8 @@ En cuanto al peso de cada organismo en el conjunto total de los datos tenemos qu
 
 <figure class="withCaption">
   <img src="fig/publisher.png" alt="Dataset de datos.gob.es por publicador" title="Dataset de datos.gob.es por publicador">
-  <figcaption>Dataset de datos.gob.es por publicador<br/>
-  <a href="https://datos.gob.es/apidata/catalog/publisher.json?_pageSize=999">datos.gob.es</a></figcaption>
+  <figcaption><p>Dataset de datos.gob.es por publicador<br/>
+  <a href="https://datos.gob.es/apidata/catalog/publisher.json?_pageSize=999">datos.gob.es</a></p></figcaption>
 </figure>
 
 el País Vasco es el líder absoluto, seguido del gobierno de Aragón y el Instituto geológico y minero de España. Mientras que el Ministerio de Agricultura se encuentra relativamente atrás, aunque hay que tener en cuenta que aún así esta en el primer tercio del ranking y que son los ayuntamientos y comunidades, mas cercanos a los ciudadanos, los que más datos están abriendo.
@@ -115,16 +112,16 @@ De hecho si juntamos todos los datos estatales el País Vasco y Aragón seguirí
 
 <figure class="withCaption">
   <img src="fig/spatial.png" alt="Dataset de datos.gob.es por ámbito geográfico" title="Dataset de datos.gob.es por ámbito geográfico">
-  <figcaption>Dataset de datos.gob.es por ámbito geográfico<br/>
-  <a href="https://datos.gob.es/apidata/catalog/spatial.json?_pageSize=999">datos.gob.es</a></figcaption>
+  <figcaption><p>Dataset de datos.gob.es por ámbito geográfico<br/>
+  <a href="https://datos.gob.es/apidata/catalog/spatial.json?_pageSize=999">datos.gob.es</a></p></figcaption>
 </figure>
 
 y si solo nos fijamos en los organismos estatales vemos:
 
 <figure class="withCaption">
   <img src="fig/publisher_E.png" alt="Dataset de datos.gob.es por publicador (solo estatal)" title="Dataset de datos.gob.es por publicado (solo estatal)">
-  <figcaption>Dataset de datos.gob.es por publicador (solo estatal)<br/>
-  <a href="https://datos.gob.es/apidata/catalog/publisher.json?_pageSize=999">datos.gob.es</a></figcaption>
+  <figcaption><p>Dataset de datos.gob.es por publicador (solo estatal)<br/>
+  <a href="https://datos.gob.es/apidata/catalog/publisher.json?_pageSize=999">datos.gob.es</a></p></figcaption>
 </figure>
 
 que Agricultura esta en el puesto 6, y es el 2º ministerio (lo demás que esta por delante son organismos autónomos).
@@ -157,8 +154,8 @@ proyecto sobre incendios:
 
 <figure class="withCaption">
   <img src="fig/egif.png" alt="Incendios con coordenadas geográficas" title="Incendios con coordenadas geográficas">
-  <figcaption>Incendios con coordenadas geográficas<br/>
-  <a href="https://www.mapa.gob.es/es/desarrollo-rural/estadisticas/Incendios_default.aspx">www.mapa.gob.es</a></figcaption>
+  <figcaption><p>Incendios con coordenadas geográficas<br/>
+  <a href="https://www.mapa.gob.es/es/desarrollo-rural/estadisticas/Incendios_default.aspx">www.mapa.gob.es</a></p></figcaption>
 </figure>
 
 Aquí medimos la calidad de los datos en función de cuantos de ellos tienen coordenadas
@@ -247,8 +244,8 @@ lista el portal de datos abiertos de la Unión Europea agrupándolas por sector:
 
 <figure class="withCaption">
   <img src="fig/examples.png" alt="Aplicaciones por sector" title="Aplicaciones por sector">
-  <figcaption>Aplicaciones por sector<br/>
-  <a href="https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=Agriculture%2C%20Fisheries%2C%20Forestry%20%26%20Foods&field_type_of_use_case_value=All">www.europeandataportal.eu</a></figcaption>
+  <figcaption><p>Aplicaciones por sector<br/>
+  <a href="https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=Agriculture%2C%20Fisheries%2C%20Forestry%20%26%20Foods&field_type_of_use_case_value=All">www.europeandataportal.eu</a></p></figcaption>
 </figure>
 
 En ella vemos el peso de cada sector en el conjunto total, siendo el azul para
