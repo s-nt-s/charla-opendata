@@ -8,7 +8,7 @@ sobre <code>Open Data</code> impartida en el <code>Ministerio de agricultura, pe
 <blockquote cite="http://opendefinition.org">
 <p>Un dato abierto es aquel que puede ser usado, modificado y compartido libremente por cualquiera y para cualquier propósito.</p>
 <footer>
--- <cite> <a href="http://opendefinition.org/od/2.1/es/">opendefinition</a></cite>
+-- <cite> <a href="http://opendefinition.org/od/2.1/es/">opendefinition.org</a></cite>
 </footer>
 </blockquote>
 
@@ -27,7 +27,7 @@ a los motivos económicos, que quizá son menos obvios.
 
 Han de recordar que todo lo que llevamos hablado en estas jornadas depende no solo de una gran cantidad de datos para realizarse si no también de la combinación de diversas fuentes. El coste asociado a tener que tratar con datos cerrados, yendo caso por caso buscando su acceso, adecuándolo para que sea legible, comprando licencias, etc, etc, conlleva una barrera que impediría muchos de los proyectos posibles con datos abiertos.
 
-Proyectos que crean riqueza. ¿Cuánta? Según la consultora McKinsey estamos hablando de entre 3 y 5 billones (millón de millones) de dolares al año.
+Proyectos que crean riqueza. ¿Cuánta? Según la consultora `McKinsey` estamos hablando de entre 3 y 5 billones (millón de millones) de dolares al año.
 
 <figure class="withCaption">
   <img src="https://www.mckinsey.com/~/media/McKinsey/Business%20Functions/McKinsey%20Digital/Our%20Insights/Open%20data%20Unlocking%20innovation%20and%20performance%20with%20liquid%20information/SVG_Open_data_Exhibit.ashx" alt="Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors" title="Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors">
@@ -56,7 +56,7 @@ Según el `Open Data Barometer` España ocupa el undécimo puesto en el ranking 
 <figure class="withCaption">
   <img src="fig/barometer1.png" alt="Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales" title="Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales">
   <figcaption><p>Los primeros de cada región en la cuarta edición del Barómetro, con sus respectivas posiciones y puntuaciones generales<br/>
-  <a href="https://opendatabarometer.org/4thedition/report/?lang=es">opendatabarometer.org/4thedition/</a></p></figcaption>
+  <a href="https://opendatabarometer.org/4thedition/report/?lang=es">opendatabarometer.org/4thedition</a></p></figcaption>
 </figure>
 
 Este informe nos dice que tenemos un buen volumen de datos y vamos en buena dirección, pero también nos dice (a nosotros y la resto de países) que queda mucho por hacer.
@@ -66,7 +66,7 @@ No en vano solo el 7% de de los supuestos `datos abiertos` son realmente abierto
 <figure class="withCaption">
   <img src="fig/barometer2.png" alt="Detalle de España en Open Data Barometer" title="Detalle de España en Open Data Barometer">
   <figcaption><p>Detalle de España en Open Data Barometer<br/>
-  <a href="https://opendatabarometer.org/4thedition/detail-country/?_year=2016&indicator=ODB&detail=ESP">opendatabarometer.org/4thedition/</a></p></figcaption>
+  <a href="https://opendatabarometer.org/4thedition/detail-country/?_year=2016&indicator=ODB&detail=ESP">opendatabarometer.org/4thedition</a></p></figcaption>
 </figure>
 
 Como en la mayoría de países la asignatura pendiente son los datos referentes a la rendición de cuentas (presupuestos y gasto público) aunque hay una buena base para la innovación y la política social.
@@ -155,7 +155,7 @@ proyecto sobre incendios:
 <figure class="withCaption">
   <img src="fig/egif.png" alt="Incendios con coordenadas geográficas" title="Incendios con coordenadas geográficas">
   <figcaption><p>Incendios con coordenadas geográficas<br/>
-  <a href="https://www.mapa.gob.es/es/desarrollo-rural/estadisticas/Incendios_default.aspx">www.mapa.gob.es</a></p></figcaption>
+  <a href="https://www.mapa.gob.es/es/desarrollo-rural/estadisticas/Incendios_default.aspx">mapa.gob.es</a></p></figcaption>
 </figure>
 
 Aquí medimos la calidad de los datos en función de cuantos de ellos tienen coordenadas
@@ -245,7 +245,7 @@ lista el portal de datos abiertos de la Unión Europea agrupándolas por sector:
 <figure class="withCaption">
   <img src="fig/examples.png" alt="Aplicaciones por sector" title="Aplicaciones por sector">
   <figcaption><p>Aplicaciones por sector<br/>
-  <a href="https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=Agriculture%2C%20Fisheries%2C%20Forestry%20%26%20Foods&field_type_of_use_case_value=All">www.europeandataportal.eu</a></p></figcaption>
+  <a href="https://www.europeandataportal.eu/es/using-data/use-cases?title=&body_value=&field_country_value=All&field_region_value=All&field_sector_value=Agriculture%2C%20Fisheries%2C%20Forestry%20%26%20Foods&field_type_of_use_case_value=All">europeandataportal.eu</a></p></figcaption>
 </figure>
 
 En ella vemos el peso de cada sector en el conjunto total, siendo el azul para
