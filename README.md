@@ -1,5 +1,5 @@
 <p class="nota" style="text-align: right;">Este es el guión de una charla
-sobre `Open Data` impartida en el `Ministerio de agricultura, pesca y alimentación`</p>
+sobre <code>Open Data</code> impartida en el <code>Ministerio de agricultura, pesca y alimentación</code></p>
 
 # ¿Cómo ha de ser un dato abierto y por qué?
 
@@ -35,6 +35,7 @@ Proyectos que crean riqueza. ¿Cuánta? Según la consultora McKinsey estamos ha
   Open data can help unlock $3 trillion to $5 trillion in economic value annually across seven sectors<br/>
   <a href="https://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/open-data-unlocking-innovation-and-performance-with-liquid-information">mckinsey.com</a>
   </figcaption>
+
 </figure>
 
 Incluso podríamos decir que esta es una estimación a la baja ya que no incluye todos los tipos de datos abiertos, lo que nos lleva a:
