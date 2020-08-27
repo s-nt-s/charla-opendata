@@ -169,7 +169,7 @@ Si inicio mi estudio desde finales del 68, solo podre usar el 40% de los incendi
 
 Lo cual habla muy bien de este conjunto de datos, sobretodo si tenemos en cuenta que solo hemos encontrado datos demográficos posteriores a 1996, de paro desde 2006, empresariales desde 2012 y tributarios desde 2013 (a excepción del País Vasco, que tiene desde el 97). Incluso la AEMET no proporciona históricos más allá de 1975.
 
-Finalmente, hay que reseñar que pese a los muchos puntos a mejorar para que los datos abiertos sean abiertos de verdad, la ventaja y en enriquecimientos que proporcionan es ya evidente. Si estos datos no fueran abiertos, aunque pensáramos que eventualmente pudiéramos llegar a un acuerdo con sus propietarios para usarlos, lo más probable es que el proyecto hubiera muerto antes de poder arrancar.
+Finalmente, hay que reseñar que pese a los muchos puntos a mejorar para que los datos abiertos sean abiertos de verdad, la ventaja y el enriquecimientos que proporcionan es ya evidente. Si estos datos no fueran abiertos, aunque pensáramos que eventualmente pudiéramos llegar a un acuerdo con sus propietarios para usarlos, lo más probable es que el proyecto hubiera muerto antes de poder arrancar.
 
 En definitiva, disponer de datos abiertos supone ponerse a trabajar en crear valor desde el primer momento, sin entretenerse en:
 
