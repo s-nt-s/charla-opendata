@@ -39,7 +39,7 @@ Incluso podríamos decir que esta es una estimación a la baja ya que no incluye
 
 ## ¿Qué tipos de datos abiertos hay?
 
-Hay muchas posibles clasificaciones, pero voy a usar los tres grandes grupos que identifica el [Open Data Barometer](https://Open Databarometer.org):
+Hay muchas posibles clasificaciones, pero voy a usar los tres grandes grupos que identifica el [Open Data Barometer](https://opendatabarometer.org):
 
 * Innovación
 * Política social
